@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<link href="play.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="mp3.ico" />
+<title>Player</title>
+</head>
+<body> 
+<h2>Play It!</h2>
+<table width="100%">
+<tr  >
+<td class="left">
+<ul class="llist">
+<li onclick="select('Khaidi_150')">Khaidi_150</li>
+<li onclick="select('JanataGarage')">JanataGarage</li>
+<li onclick="select('Nenu_Local')">Nenu_Local</li>
+</ul>
+</td>
+
+<td class="right">
+<ul id="rlist">
+</ul>
+</td>
+</tr>
+<br>
+<div class="online">
+<ul id="list">
+<li class="https://goo.gl/WF2ML5" id="O Sakkanoda (Guru)" onclick="myFunction(this.id,this.className)">O sakkanoda</li>
+<li class="https://goo.gl/CVt8W0 Khaidi_150" id="you" onclick="myFunction(this.id,this.className)">You and me (Khaidi 150)</li>
+<li class="https://goo.gl/rQxdB7 Khaidi_150" id="Neeru Neeru" onclick="myFunction(this.id,this.className)">Neeru neeru</li>
+<li class="https://goo.gl/nrBH4O Nenu_Local" id="Arere Ekkada ekkada" onclick="myFunction(this.id,this.className)">Arere Ekkada (nenu local)</li>
+<li class="https://goo.gl/KA5GOY Nenu_Local" id="Next Enti" onclick="myFunction(this.id,this.className)">Next Enti (nenu local)</li>
+<li class="https://goo.gl/X16WzF JanataGarage" id="Nee Selavadigi" onclick="myFunction(this.id,this.className)">Nee Selavadig(JanataGarage)</li>
+<li class="https://goo.gl/Pqut4t JanataGarage" id="Pakka Local" onclick="myFunction(this.id,this.className)">Pakka Local(Janata Garage)</li>
+</ul>
+</div>
+<frameset
+<div id="just">
+
+<audio id="myAudio"  autoplay width="100%">
+  <source id="mp4_src"  type="audio/mp3">
+  <source id="ogg_src"  type="audio/ogg">
+  Your browser does not support HTML5 video.
+</audio>
+<div>
+<div id="divi"></div>
+<script src="play.js"> 
+</script> 
+
+
+
+</body> 
+</html>

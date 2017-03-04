@@ -1,0 +1,105 @@
+#list li{
+	cursor:pointer;
+	width:97%;
+	height:25px;
+	display:block;
+	text-align:left;
+	margin:0px 8px;
+	line-height:2.1em;
+	padding:10px;
+	padding-left:15px;
+	position:relative;
+	/*background:url("mp3.jpg") no-repeat,url("back.png");
+	background-size:contain;*/
+	border:2px solid #faecff;
+	border-radius:5px;
+	word-wrap:break-word;
+	z-index:2;
+}
+audio{
+	top:100px;
+}
+#p{
+	font-weight:700;
+	font-style:italic;
+}
+#audioContainer{
+	box-sizing:border-box;
+	border-radius:9px;
+	position:fixed;bottom:60px;width:80%;
+	padding:10px;	
+	height:150px;
+	left:10%;
+}
+.list li:hover{
+color:lightgreen;
+background-color:gray;
+font-weight:800;
+font-style:italic;
+box-shadow:5px 5px 10px #aaaaaa;
+word-wrap:break-word;
+}
+.divi{
+height:30px;
+width:100%;
+border:1px solid #888888;
+
+}
+*{
+	margin-left:0%;
+
+}
+.llist li{
+	cursor:pointer;
+	height:25px;
+	width:100px;
+	padding:10px;
+	border-radius:6px;
+	position:relative;
+	background-color:#afafaf;
+	list-style:none;
+	margin:0px 10px 0px -20px;
+	
+}
+.llist li:hover{
+	color:#afafaf;
+	background-color:black;
+}
+.llist{
+	margin:0px;
+}
+.left{
+	width:10%;
+	background-color:#fafafa;
+	position:relative;
+}
+.right{
+	overflow:hidden;
+	background-color:#fafafa;
+	margin-top:30px;
+	padding-bottom:30px;
+}
+#list{
+	display:none;
+}
+h2{
+	height:10px;
+}
+#rlist li{
+	cursor:pointer;
+	width:97%;
+	height:25px;
+	display:block;
+	text-align:left;
+	margin:0px 8px;
+	line-height:2.1em;
+	padding:10px;
+	padding-left:15px;
+	position:relative;
+	/*background:url("mp3.jpg") no-repeat,url("back.png");
+	background-size:contain;*/
+	border:2px solid #faecff;
+	border-radius:5px;
+	word-wrap:break-word;
+	z-index:2;
+}
