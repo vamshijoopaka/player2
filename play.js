@@ -1,40 +1,34 @@
-//var vid = document.getElementById("myAudio");
+
 var y=0;var z=0;
 var x = document.createElement("AUDIO");
 var b=document.createElement("br");
 var d=document.createElement ("div");
 divCss();
-
-	 
+var res;
 var identifier;
 function myFunction(id,cn) { 
 
-	 res=cn.split(" ");
-	//document.getElementById("just").innerHTML="res[0]";
-	cn=res[0];
+	res=cn.split(" ");
+	//document.getElementById("divi").innerHTML=res[1];
+	//cn=res[0];
 	if(y==0){
     y++;identifier=id;
     if (x.canPlayType("audio/mpeg")) {
-        x.setAttribute("src",cn);
+        x.setAttribute("src",res[0]);
     } else {
-        x.setAttribute("src",cn);
+        x.setAttribute("src",res[0]);
     }
-	
-    x.setAttribute("controls", "controls");
-	x.autoplay=true;
-	x.load();
-	x.style.width="60%";
-	x.style.backgroundColor="gray";
-	x.style.transform="scale(1.05)";
-	x.style.transition="all 1s linear";
-	//document.getElementById(id).appendChild(b);
+	audio();
+	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
+	document.getElementById("divi").style.backgroundColor="#e6f9ac";
 	d.appendChild(x);
 	var p=document.getElementById(id);
 	d.classList.toggle('fade');
 	p.appendChild(d);
 	
 	p.style.borderBottomWidth="0";
-	p.style.marginBottom="32px";}
+	p.style.marginBottom="32px";
+	}
 	else 
 	{	delete x;y--;
 		document.getElementById(identifier).style.borderBottomWidth="2px";
@@ -55,10 +49,17 @@ d.style.height="30px";
 d.style.width="inherit";
 d.style.transition="width 2s,height 2s";
 d.style.position="relative";
-//d.style.border="2px solid black";
-//d.style.backgroundColor="gray";
 d.style.clear="both";
 d.style.zIndex="1000";
+}
+function audio(){
+	 x.setAttribute("controls", "controls");
+	x.autoplay=true;
+	x.load();
+	x.style.width="60%";
+	x.style.backgroundColor="gray";
+	x.style.transform="scale(1.05)";
+	x.style.transition="all 1s linear";
 }
 pre="";
 function select(t){
@@ -71,16 +72,16 @@ function select(t){
 			while(rlist.hasChildNodes())
 			rmchild.removeChild(rmchild.childNodes[0]);
 			xx=yy.querySelectorAll("li");
-	//document.getElementById("divi").innerHTML=pre.id;
 	 for(var i=0;i<xx.length;i++){	 
      var sp=xx[i].className.split(" ");
-	//if(pre!=xx[i]){
+	if(pre!=xx[i]){delete x;}
 	if(sp[1]==t){
 		pre=xx[i];
 		var p=xx[i];
+		xx[i].classList.add('active');
 		rmchild.appendChild(p);
 	//xx[i].style.visibility="visible";
 			}
 		}
-	// }
+	
 }
