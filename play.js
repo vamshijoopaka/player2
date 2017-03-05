@@ -25,14 +25,15 @@ function myFunction(id,cn) {
 	var p=document.getElementById(id);
 	d.classList.toggle('fade');
 	p.appendChild(d);
-	
 	p.style.borderBottomWidth="0";
 	p.style.marginBottom="32px";
+	p.style.backgroundColor="#e8eced";
 	}
 	else 
 	{	delete x;y--;
 		document.getElementById(identifier).style.borderBottomWidth="2px";
 		document.getElementById(identifier).style.marginBottom="initial";
+	 	document.getElementById(identifier).style.backgroundColor="inherit";
 		//delete b;	
 		
 		myFunction(id,cn);
