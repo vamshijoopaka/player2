@@ -31,12 +31,12 @@ audio{
 	height:150px;
 	left:10%;
 }
-.list li:hover{
-color:lightgreen;
-background-color:gray;
+#rlist li:hover{
+color:#d86363;
+
 font-weight:800;
 font-style:italic;
-box-shadow:5px 5px 10px #aaaaaa;
+box-shadow:1px 1px 4px #aaaaaa;
 word-wrap:break-word;
 }
 .divi{
