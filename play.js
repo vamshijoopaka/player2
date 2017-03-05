@@ -55,6 +55,7 @@ d.style.zIndex="1000";
 function audio(){
 	 x.setAttribute("controls", "controls");
 	x.autoplay=true;
+	x.play();
 	x.load();
 	x.style.width="60%";
 	x.style.backgroundColor="gray";
