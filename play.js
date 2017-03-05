@@ -75,7 +75,7 @@ function select(t){
 			xx=yy.querySelectorAll("li");
 	 for(var i=0;i<xx.length;i++){	 
      var sp=xx[i].className.split(" ");
-	if(pre!=xx[i]){delete x;}
+	//if(pre!=xx[i]){delete x;}
 	if(sp[1]==t){
 		pre=xx[i];
 		var p=xx[i];
