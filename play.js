@@ -22,12 +22,12 @@ function myFunction(id,cn) {
 	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
 	document.getElementById("divi").style.backgroundColor="#e6f9ac";
 	d.appendChild(x);
-	d.style.marginTop="5px";
+	d.style.marginBottom="5px";
 	var p=document.getElementById(id);
 	d.classList.toggle('fade');
 	p.appendChild(d);
 	p.style.borderBottomWidth="0";
-	p.style.marginBottom="37px";
+	p.style.marginBottom="40px";
 	p.style.backgroundColor="#e8eced";
 	}
 	else 
