@@ -26,7 +26,7 @@ function myFunction(id,cn) {
 	d.classList.toggle('fade');
 	p.appendChild(d);
 	p.style.borderBottomWidth="0";
-	p.style.marginBottom="32px";
+	p.style.marginBottom="37px";
 	p.style.backgroundColor="#e8eced";
 	}
 	else 
