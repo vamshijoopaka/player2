@@ -22,7 +22,7 @@ function myFunction(id,cn) {
 	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
 	document.getElementById("divi").style.backgroundColor="#e6f9ac";
 	d.appendChild(x);
-	d.style.marginBottom="5px";
+	d.style.marginBottom="1em";
 	var p=document.getElementById(id);
 	d.classList.toggle('fade');
 	p.appendChild(d);
