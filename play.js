@@ -1,6 +1,7 @@
 
 var y=0;var z=0;
 var x = document.createElement("AUDIO");
+x.autoplay=true;
 var b=document.createElement("br");
 var d=document.createElement ("div");
 divCss();
