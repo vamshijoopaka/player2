@@ -39,6 +39,7 @@ function myFunction(id,cn) {
 		//delete b;	
 		
 		myFunction(id,cn);
+	 	audio();
 	}
 	
 	 
