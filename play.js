@@ -85,6 +85,6 @@ function select(t){
 		rmchild.appendChild(p);
 	//xx[i].style.visibility="visible";
 			}
-		}
+		} 
 	
 }
