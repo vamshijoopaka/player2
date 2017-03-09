@@ -20,8 +20,8 @@ function myFunction(id,cn) {
     }
 	while(var time=x.currentTime)
 {
-	x.autoplay=true;
 	x.load();
+	x.autoplay=true;
 	if(time>0)break;
 }
 	audio();
