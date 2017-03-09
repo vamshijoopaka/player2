@@ -8,7 +8,6 @@ divCss();
 var res;
 var identifier;
 function myFunction(id,cn) { 
-
 	res=cn.split(" ");
 	//document.getElementById("divi").innerHTML=res[1];
 	//cn=res[0];
@@ -17,11 +16,14 @@ function myFunction(id,cn) {
     if (x.canPlayType("audio/mpeg")) {
         x.setAttribute("src",res[0]);
     } else {
-        x.setAttribute("src",res[0]);
+        x.setAttribute("src",res[0]);	
     }
+	
+	
 	audio();
-	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
-	document.getElementById("divi").style.backgroundColor="#e6f9ac";
+	diviText=document.getElementById("divi");
+	diviText.innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
+	diviText.style.backgroundColor="#e6f9ac";
 	d.appendChild(x);
 	d.style.marginBottom="1em";
 	var p=document.getElementById(id);
@@ -30,6 +32,16 @@ function myFunction(id,cn) {
 	p.style.borderBottomWidth="0";
 	p.style.marginBottom="40px";
 	p.style.backgroundColor="#e8eced";
+		/*time=x.duration;
+		while(isNaN(time))
+		{
+			time=x.duration;
+			diviText=diviText.innerHTML+time;
+			if(!isNaN(time)){
+			x.load();
+			x.autoplay=true;
+			break;}
+		}*/
 	}
 	else 
 	{	delete x;y--;
@@ -39,7 +51,7 @@ function myFunction(id,cn) {
 		//delete b;	
 		
 		myFunction(id,cn);
-	 	audio();
+		//audio();
 	}
 	
 	 
@@ -87,6 +99,6 @@ function select(t){
 		rmchild.appendChild(p);
 	//xx[i].style.visibility="visible";
 			}
-		} 
+		}
 	
 }
