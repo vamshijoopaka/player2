@@ -18,8 +18,12 @@ function myFunction(id,cn) {
     } else {
         x.setAttribute("src",res[0]);
     }
+	while(var p=x.currentTime)
+{
 	x.autoplay=true;
 	x.load();
+	if(p>0)break;
+}
 	audio();
 	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
 	document.getElementById("divi").style.backgroundColor="#e6f9ac";
