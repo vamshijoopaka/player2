@@ -18,11 +18,11 @@ function myFunction(id,cn) {
     } else {
         x.setAttribute("src",res[0]);
     }
-	while(var p=x.currentTime)
+	while(var time=x.currentTime)
 {
 	x.autoplay=true;
 	x.load();
-	if(p>0)break;
+	if(time>0)break;
 }
 	audio();
 	document.getElementById("divi").innerHTML="Now Playing Album:"+"<b><i>"+res[1]+"</i></b>"+"<br> Track :"+"<b><i>"+id+"</i></b>"
