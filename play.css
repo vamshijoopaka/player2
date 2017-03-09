@@ -113,11 +113,11 @@ h2{
 	height:2.5em;
 }
 footer {
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 1em;
   background-color: #efefef;
   text-align: center;
 }
