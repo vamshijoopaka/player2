@@ -59,7 +59,7 @@ function audio(){
 	 x.setAttribute("controls", "controls");
 	x.autoplay=true;
 	x.play();
-	x.load();
+	//x.load();
 	x.style.width="60%";
 	x.style.backgroundColor="gray";
 	x.style.transform="scale(1.05)";
