@@ -15,8 +15,10 @@ function myFunction(id,cn) {
     y++;identifier=id;
     if (x.canPlayType("audio/mpeg")) {
         x.setAttribute("src",res[0]);
+	x.play();
     } else {
         x.setAttribute("src",res[0]);	
+	x.play();
     }
 	
 	
@@ -32,16 +34,6 @@ function myFunction(id,cn) {
 	p.style.borderBottomWidth="0";
 	p.style.marginBottom="40px";
 	p.style.backgroundColor="#e8eced";
-		/*time=x.duration;
-		while(isNaN(time))
-		{
-			time=x.duration;
-			diviText=diviText.innerHTML+time;
-			if(!isNaN(time)){
-			x.load();
-			x.autoplay=true;
-			break;}
-		}*/
 	}
 	else 
 	{	delete x;y--;
@@ -51,7 +43,7 @@ function myFunction(id,cn) {
 		//delete b;	
 		
 		myFunction(id,cn);
-		//audio();
+		audio();
 	}
 	
 	 
